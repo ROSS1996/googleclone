@@ -1,0 +1,66 @@
+@import "components";
+
+.advancedHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  h1 {
+    font-size: 1.5rem;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+#advanced {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 20px;
+  h1 {
+    font-weight: 300;
+    font-size: 20px;
+    color: $red;
+    border-bottom: 1px solid #dfe1e5;
+    width: 100%;
+    padding: 15px 0;
+  }
+  #todo {
+    grid-column: 3;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  form {
+    display: grid;
+    grid-template-rows: repeat(6, 30px);
+    gap: 12px;
+
+    .advancedRows {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      gap: 10px;
+      .field {
+        padding: 5px;
+      }
+      .instruction {
+        font-size: 0.8rem;
+      }
+      align-items: center;
+    }
+    .advancedAction {
+      justify-self: end;
+      grid-column: 2;
+      button {
+        @extend %button;
+        padding: 8px 15px !important;
+        &:hover {
+          background-color: rgb(26, 99, 192);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

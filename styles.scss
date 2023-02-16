@@ -1,0 +1,151 @@
+@import "advanced", "components";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+#signIn {
+  @extend %button;
+  padding: 8px 25px !important;
+  border-radius: 3px;
+}
+
+header,
+footer {
+  padding: 10px;
+  color: #70757a;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  ul {
+    @extend %linkList;
+  }
+}
+
+.bigLogo {
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  #logo {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-weight: 300;
+      font-size: 1rem;
+      color: $blue;
+      align-self: flex-end;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  #wrapper {
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 15px;
+    width: 30vw;
+    #icon {
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+    }
+    #searchField {
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+  }
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    button {
+      border-radius: 5px;
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      color: #3c4043;
+      outline: none;
+      border: none;
+      padding: 12px;
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+          rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      }
+      &:active {
+        border: 1px solid blue;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  color: #70757a;
+  div {
+    padding: 12px;
+  }
+  .linksList {
+    @extend %linkList;
+    justify-content: safe;
+  }
+  #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #links {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}

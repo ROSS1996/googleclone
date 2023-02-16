@@ -3,7 +3,7 @@
 
 <head>
     <title>Advanced Search</title>
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -13,47 +13,45 @@
                     class="blue">g</span><span class="green">l</span><span class="red">e</span></h1>
         </a>
         <ul>
-            <li id="signIn">Sign In</li>
+            <li><button id="signIn">Sign In</button></li>
         </ul>
     </header>
-    <main class="advancedMain">
-        <div class="advanced">
-            <h2 class="red advanced-title">Advanced Search</h2>
-        </div>
-        <form action="https://google.com/search" class="advancedFields">
+    <main id="advanced">
+        <h1>Advanced Search</h1>
+        <form action="https://google.com/search">
             <div class="advancedRows">
                 <h3>Find pages with...</h3>
-                <p style="grid-column: 3;">To do this in the search box.
+                <p id="todo">To do this in the search box.
                 </p>
             </div>
             <div class="advancedRows">
                 <label for="as_q">all these words:</label>
-                <input type="search" name="as_q" id="as_q">
-                <p>Type the important words: tri-colour rat terrier
+                <input type="search" name="as_q" id="as_q" class="field">
+                <p class="instruction">Type the important words: tri-colour rat terrier
                 </p>
             </div>
             <div class="advancedRows">
                 <label for="as_epq">this exact word or phrase:</label>
-                <input type="search" name="as_epq" id="as_epq">
-                <p>Put exact words in quotes: "rat terrier"
+                <input type="search" name="as_epq" id="as_epq" class="field">
+                <p class="instruction">Put exact words in quotes: "rat terrier"
 
                 </p>
             </div>
             <div class="advancedRows">
                 <label for="as_oq">any of these words:</label>
-                <input type="search" name="as_oq" id="as_oq">
-                <p>Type OR between all the words you want: miniature OR standard
+                <input type="search" name="as_oq" id="as_oq" class="field">
+                <p class="instruction">Type OR between all the words you want: miniature OR standard
 
                 </p>
             </div>
             <div class="advancedRows">
                 <label for="as_eq">none of these words:</label>
-                <input type="search" name="as_eq" id="as_eq">
-                <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                <input type="search" name="as_eq" id="as_eq" class="field">
+                <p class="instruction">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
                 </p>
             </div>
             <div class="advancedRows">
-                <div class="advancedAction"><button id="advancedButton">Advanced Search</button></div>
+                <div class="advancedAction"><button>Advanced Search</button></div>
             </div>
         </form>
     </main>
@@ -62,13 +60,13 @@
             Your Country
         </div>
         <div id="links">
-            <ul>
+            <ul class="linksList">
                 <li>About</li>
                 <li>Advertising</li>
                 <li>Business</li>
                 <li>How Search Works</li>
             </ul>
-            <ul>
+            <ul class="linksList">
                 <li>Privacy</li>
                 <li>Terms</li>
                 <li>Settings</li>

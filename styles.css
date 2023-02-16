@@ -1,0 +1,273 @@
+#signIn, #advanced form .advancedAction button {
+  background-color: #4887f3;
+  color: #ffffff;
+  padding: 8px 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+#signIn:hover, #advanced form .advancedAction button:hover {
+  background-color: #1a63c0;
+  cursor: pointer;
+}
+
+footer .linksList, header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  list-style-position: inside;
+  gap: 15px;
+  align-items: center;
+}
+footer .linksList li:hover, header ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .linksList a, header ul a {
+  color: #70757a;
+  text-decoration: none;
+}
+footer .linksList a:hover, header ul a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.advancedHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.advancedHeader h1 {
+  font-size: 1.5rem;
+}
+.advancedHeader a:hover {
+  text-decoration: none;
+}
+
+#advanced {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+#advanced h1 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #eb4235;
+  border-bottom: 1px solid #dfe1e5;
+  width: 100%;
+  padding: 15px 0;
+}
+#advanced #todo {
+  grid-column: 3;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+#advanced form {
+  display: grid;
+  grid-template-rows: repeat(6, 30px);
+  gap: 12px;
+}
+#advanced form .advancedRows {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+#advanced form .advancedRows .field {
+  padding: 5px;
+}
+#advanced form .advancedRows .instruction {
+  font-size: 0.8rem;
+}
+#advanced form .advancedAction {
+  justify-self: end;
+  grid-column: 2;
+}
+#advanced form .advancedAction button {
+  padding: 8px 15px !important;
+}
+#advanced form .advancedAction button:hover {
+  background-color: rgb(26, 99, 192);
+  cursor: pointer;
+}
+
+#signIn, #advanced form .advancedAction button {
+  background-color: #4887f3;
+  color: #ffffff;
+  padding: 8px 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+#signIn:hover, #advanced form .advancedAction button:hover {
+  background-color: #1a63c0;
+  cursor: pointer;
+}
+
+footer .linksList, header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  list-style-position: inside;
+  gap: 15px;
+  align-items: center;
+}
+footer .linksList li:hover, header ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .linksList a, header ul a {
+  color: #70757a;
+  text-decoration: none;
+}
+footer .linksList a:hover, header ul a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.red {
+  color: #eb4235;
+}
+
+.green {
+  color: #34a952;
+}
+
+.blue {
+  color: #4887f3;
+}
+
+.yellow {
+  color: #fabc04;
+}
+
+#signIn {
+  padding: 8px 25px !important;
+  border-radius: 3px;
+}
+
+header,
+footer {
+  padding: 10px;
+  color: #70757a;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.bigLogo {
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#default #logo {
+  display: flex;
+  flex-direction: column;
+}
+#default #logo h2 {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #4887f3;
+  align-self: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form #wrapper {
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+  gap: 15px;
+  width: 30vw;
+}
+form #wrapper #icon {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+form #wrapper #searchField {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+form #buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+form #buttons button {
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+form #buttons button:hover {
+  cursor: pointer;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+form #buttons button:active {
+  border: 1px solid blue;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  color: #70757a;
+}
+footer div {
+  padding: 12px;
+}
+footer .linksList {
+  justify-content: safe;
+}
+footer #links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  footer #links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}/*# sourceMappingURL=styles.css.map */

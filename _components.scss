@@ -1,0 +1,42 @@
+$red: #eb4235;
+$green: #34a952;
+$blue: #4887f3;
+$darkerBlue: #1a63c0;
+$yellow: #fabc04;
+
+%button {
+  background-color: $blue;
+  color: #ffffff;
+  padding: 8px 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 12px;
+  &:hover {
+    background-color: $darkerBlue;
+    cursor: pointer;
+  }
+}
+
+%linkList {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  list-style-position: inside;
+  gap: 15px;
+  align-items: center;
+  li {
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  a {
+    color: #70757a;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
